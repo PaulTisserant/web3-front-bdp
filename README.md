@@ -76,17 +76,6 @@ Run the development server with the following command:
 
 This will start the application on `http://localhost:3000`. You can now access it in your browser.
 
-Default RPC URL
----------------
-
--   **RPC URL**: `rpc.ankr.com/polygon_amoy`
-
--   **Chain ID**: 80002
-
-### BDP Token Contract
-
-The **BDP Token** contract is available on **Amoy PolygonScan** [here](https://amoy.polygonscan.com/address/0xbae72f20dacf4bbb38413eba699b9dec9161a27e#code).
-
 Technologies Used
 -----------------
 
