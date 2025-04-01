@@ -24,9 +24,18 @@ function App() {
           </h1>
           {isConnected ? (
             <div className="flex items-center gap-4">
-              <span className="text-white/70">
-                {address?.slice(0, 6)}...{address?.slice(-4)}
-              </span>
+                <div className="flex items-center gap-2">
+                <span className="text-white/70">
+                  {address?.slice(0, 6)}...{address?.slice(-4)}
+                </span>
+                <button
+                  onClick={() => navigator.clipboard.writeText(address || '')}
+                  className="text-blue-400 hover:text-blue-500 transition-all"
+                  title="Copy Address"
+                >
+                  📋
+                </button>
+                </div>
               <button
                 onClick={() => disconnect()}
                 className="flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-lg hover:bg-red-500/30 transition-all"

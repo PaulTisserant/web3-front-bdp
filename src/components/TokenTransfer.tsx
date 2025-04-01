@@ -71,7 +71,7 @@ function TokenTransfer() {
           <div className="flex items-center gap-2 text-green-400 mt-4">
             <Check size={16} />
             <a
-              href={`https://polygonscan.com/tx/${txHash}`}
+              href={`https://amoy.polygonscan.com/tx/${txHash}`}
               target="_blank"
               rel="noopener noreferrer"
               className="transaction-link"
