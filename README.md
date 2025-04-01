@@ -1,78 +1,109 @@
-# Projet Web3 - BDP Token
+Web3 Project - BDP Token
+========================
 
-## Description
+Description
+-----------
 
-Ce projet permet d'interagir avec le **BDP Token** sur le réseau **Amoy**. L'application offre une interface utilisateur pour se connecter à un wallet MetaMask, afficher les soldes de POL et BDP, visualiser les dernières transactions du wallet, mint des tokens, effectuer des transferts et consulter un graphique des échanges de tokens.
+This project allows interaction with the **BDP Token** on the **Amoy** network. The application provides a user interface to connect a MetaMask wallet, display POL and BDP balances, view the wallet's latest transactions, mint tokens, perform transfers, and visualize a graph of token exchanges.
 
-Une version en ligne est disponible ici : [https://bdpeu.netlify.app/](https://bdpeu.netlify.app/)
+An online version is available here: <https://bdpeu.netlify.app/>
 
-## Prérequis
+Prerequisites
+-------------
 
-Pour utiliser ce projet, vous devez avoir :
+To use this project, you need:
 
-- Un wallet **MetaMask** ou 2 pour essayer les transferts.
-- Le réseau **Amoy** configuré sur votre MetaMask avec les informations suivantes :
-  - **Nom du réseau** : Amoy
-  - **URL du RPC** : `rpc.ankr.com/polygon_amoy`
-  - **ID de chaîne** : 80002
-  - **Symbole de la devise** : POL
-  - **URL de l’explorateur de blocs** : [amoy.polyscan.com](https://amoy.polyscan.com)
+-   A **MetaMask wallet** (or two to test transfers).
 
-Le contrat **BDP Token** est accessible ici : [[BDP Contract](https://amoy.polygonscan.com/address/0xbae72f20dacf4bbb38413eba699b9dec9161a27e#code)]
+-   The **Amoy** network configured in your MetaMask with the following details:
 
-## Fonctionnalités
+    -   **Network Name**: Amoy
 
-- **Se connecter à un wallet MetaMask** : Connectez-vous facilement avec votre wallet MetaMask pour interagir avec l'application.
-- **Afficher le solde de POL et BDP** : Voir le solde de POL (la devise native du réseau) et le solde du token **BDP** du contrat.
-- **Afficher les 5 dernières transactions** : Voir les 5 dernières transactions effectuées par votre wallet.
-- **Mint 1000 BDP par jour** : Si vous êtes le propriétaire du contrat, vous pouvez mint 1000 BDP chaque jour.
-- **Transfert de BDP** : Effectuer un transfert de BDP vers une adresse spécifiée.
-- **Graphique des transactions de BDP** : Visualisez un graphique montrant le nombre de BDP échangés chaque jour.
+    -   **RPC URL**: `rpc.ankr.com/polygon_amoy`
 
-## Lancer le projet en local
+    -   **Chain ID**: 80002
 
-### Étape 1 : Cloner le repository
+    -   **Currency Symbol**: POL
 
-Clonez le repository sur votre machine locale :
+    -   **Block Explorer URL**: [amoy.polyscan.com](https://amoy.polyscan.com)
 
-```bash
-git clone https://github.com/PaulTisserant/web3-project.git
-cd web3-project
-```
+The **BDP Token** contract is available here: [BDP Contract](https://amoy.polygonscan.com/address/0xbae72f20dacf4bbb38413eba699b9dec9161a27e#code)
 
-### Étape 2 : Installer les dépendances
-Assurez-vous d'avoir Node.js installé sur votre machine. Si ce n'est pas déjà fait, vous pouvez le télécharger [ici](https://nodejs.org/).
+Features
+--------
 
-Ensuite, installez les dépendances du projet avec npm :
+-   **Connect to a MetaMask wallet**: Easily connect your MetaMask wallet to interact with the application.
 
-```bash
-npm install
-```
+-   **Display POL and BDP balances**: View your POL balance (the network's native currency) and your **BDP** token balance from the contract.
 
-### Étape 3 : Configurer les variables d'environnement
-Créez un fichier .env.local à la racine de votre projet et ajoutez votre clé API Polygonscan pour pouvoir récupérer les données de la blockchain. Voici un exemple de fichier .env.local :
-```env
-REACT_APP_POLYGON_API_KEY=your_polygonscan_api_key
-```
+-   **View the last 5 transactions**: See the last 5 transactions made by your wallet.
 
-### Étape 4 : Démarrer le projet
-Lancez le serveur de développement avec la commande suivante :
-```bash
-npm run dev
-```
-Cela démarrera l'application sur http://localhost. Vous pouvez maintenant accéder à l'application dans votre navigateur.
+-   **Mint 1000 BDP per day**: If you are the contract owner, you can mint 1000 BDP each day.
 
-### Technologies utilisées
-- React : Framework pour la construction de l'interface utilisateur.
+-   **Transfer BDP tokens**: Send a chosen amount of BDP to a specified address.
 
-- Wagmi : Pour interagir avec Ethereum et MetaMask.
+-   **BDP transaction graph**: Visualize a chart showing the number of BDP tokens exchanged daily.
 
-- Tailwind CSS : Framework CSS utilitaire pour un design rapide et responsive.
+Run the Project Locally
+-----------------------
 
-- Chart.js : Pour générer des graphiques dynamiques des transactions de tokens.
+### Step 1: Clone the Repository
 
-### Lien vers le repo Solidity
-Le code du contrat Solidity pour le token BDP est disponible ici : Repo Solidity BDP Token
+Clone the repository to your local machine:
 
-### Auteur
-Paul Tisserant
+`git clone https://github.com/PaulTisserant/web3-project.git
+cd web3-project`
+
+### Step 2: Install Dependencies
+
+Make sure you have **Node.js** installed on your machine. If not, you can download it here: <https://nodejs.org/>.
+
+Then, install the project dependencies using npm:
+
+`npm install`
+
+### Step 3: Configure Environment Variables
+
+Create a `.env.local` file in the root of your project and add your **Polygonscan API key** to retrieve blockchain data. Here's an example of a `.env.local` file:
+
+`REACT_APP_POLYGON_API_KEY=your_polygonscan_api_key`
+
+### Step 4: Start the Project
+
+Run the development server with the following command:
+
+`npm run dev`
+
+This will start the application on `http://localhost:3000`. You can now access it in your browser.
+
+Default RPC URL
+---------------
+
+-   **RPC URL**: `rpc.ankr.com/polygon_amoy`
+
+-   **Chain ID**: 80002
+
+### BDP Token Contract
+
+The **BDP Token** contract is available on **Amoy PolygonScan** [here](https://amoy.polygonscan.com/address/0xbae72f20dacf4bbb38413eba699b9dec9161a27e#code).
+
+Technologies Used
+-----------------
+
+-   **React**: Frontend framework for building the user interface.
+
+-   **Wagmi**: Library for interacting with Ethereum and MetaMask.
+
+-   **Tailwind CSS**: Utility-first CSS framework for fast and responsive design.
+
+-   **Chart.js**: Library for generating dynamic token transaction charts.
+
+Solidity Repository
+-------------------
+
+The **Solidity** contract code for the BDP token is available here: [BDP Token Solidity Repo](https://github.com/PaulTisserant/web3-contracts)
+
+Author
+------
+
+-   **Paul Tisserant**
