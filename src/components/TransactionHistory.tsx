@@ -91,7 +91,7 @@ function TransactionHistory() {
                     {`${tx.to.slice(0, 10)}...${tx.to.slice(-10)}`}
                   </a>
               </p>
-              <p><strong>Value: </strong> {parseFloat(tx.value) / 10**18} BDP</p>
+              <p><strong>Value: </strong> {parseFloat(tx.value) / 10**18} POL</p>
             </div>
           ))}
         </div>
