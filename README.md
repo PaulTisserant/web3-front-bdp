@@ -90,7 +90,7 @@ Technologies Used
 Solidity Repository
 -------------------
 
-The **Solidity** contract code for the BDP token is available here: [BDP Token Solidity Repo](https://github.com/PaulTisserant/web3-contracts)
+The **Solidity** contract code for the BDP token is available here: [BDP Token Solidity Repo](https://github.com/PaulTisserant/web3-solidity-bdp)
 
 Author
 ------
